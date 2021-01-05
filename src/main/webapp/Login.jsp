@@ -24,7 +24,18 @@
         out.println("登录成功！该账号的性别是："+user.getSex());
         //消息包传入
         request.setAttribute("user",user);
+        //利用Session来存储数据 记得在跳转之前就把数据传入
+        session.setAttribute("user",user);
+        if (application.getAttribute("userNum")==null)
+        {
+            application.setAttribute("userNum",DBUtil.userNum);
+        }
+
+        DBUtil.userNum++;
+
+
         request.getRequestDispatcher("PersonCenter.jsp").forward(request,response);
+
 
     }
     else

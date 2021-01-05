@@ -15,7 +15,11 @@
         User user=(User) request.getAttribute("user");
         String sex= user.getSex();
         //先转码然后在转回utf-8 才能支持中文
-        out.println(new String (sex.getBytes("iso-8859-1"),"utf-8"));
+ //       out.println(new String (sex.getBytes("iso-8859-1"),"utf-8"));
+
+        User user1=(User) session.getAttribute("user");
+//      int age=user1.getAge();
+       out.println(user1.getAge());
 
     %>
 </head>

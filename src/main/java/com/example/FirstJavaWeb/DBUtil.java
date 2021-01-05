@@ -6,6 +6,7 @@ import java.util.HashMap;
 public  class DBUtil
 {
     public static Map<String, User> userDB= new HashMap<String,User>() ;
+    public static  int userNum=0;
 
     public  static boolean  AddUser(String username,String password,int age,String sex)
     {
