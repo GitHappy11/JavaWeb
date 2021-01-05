@@ -1,2 +1,19 @@
-# FirstJavaWeb
-第一个学习用JavaWeb项目,使用Jsp-Request-Servlet实现,登录和注册功能,项目完结,课程来源Siki学院.
+# JavaWeb学习笔记
+
+### 本次学习内容
+
+#### 1.初识XML
+
+**Dom4J解析建立XML文档**
+
+#### 2.在Jsp文件中写Java代码
+
+#### 3.Session
+
+#### 4.Application
+
+#### 5.Servlet
+
+#### 6.Web.xml
+
+#### 7.请求转发和重定向
