@@ -9,6 +9,19 @@
 <html>
 <head>
     <title>登录</title>
+    <script src="${pageContext.request.contextPath}/JS/jquery.js"></script>
+    <script>
+        $(function()
+        {
+           $("input[name='username']").blur(verifyUsername);
+        });
+
+        function verifyUsername()
+        {
+            alert("请确认账号");
+        }
+
+    </script>
 </head>
 <body>
 <jsp:include page="head.jsp"></jsp:include>

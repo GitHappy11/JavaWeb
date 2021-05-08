@@ -9,6 +9,34 @@
 <html>
   <head>
     <title>Second</title>
+
+    <script src="${pageContext.request.contextPath}/JS/jquery.js"></script>
+    <script>
+
+      $(function ()
+      {
+        $("input[name='username']").blur(verifyUsername);
+      })
+
+      function verifyUsername()
+      {
+      $.ajax
+      ({
+        url:"${pageContext.request.contextPath}/VerifyUsernameServlet",
+        type:"post",
+        data:
+          {
+            username:$("input[name='username']").val()
+          },
+          cache:false,
+          success:function(msg)
+          {
+            alert(msg);
+          }
+        });
+      }
+
+    </script>
   </head>
   <body>
   <jsp:include page="head.jsp"></jsp:include>

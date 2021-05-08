@@ -22,4 +22,16 @@ public class UserService
     {
         return new UserDao().GetUser(username, password);
     }
+
+    public  static  boolean  isExist(String username)
+    {
+        if (UserDao.isExist(username))
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
 }
